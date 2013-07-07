@@ -24,6 +24,7 @@ LexicalUnits::sentences(text)
 ```
 
 You can include methods into String class:
+
 ```ruby
 class String
   include LexicalUnits::String
