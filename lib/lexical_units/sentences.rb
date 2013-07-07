@@ -1,4 +1,4 @@
-#encoding: utf-8
+# coding: utf-8
 module LexicalUnits
   # Split text into sentences
   #
@@ -14,7 +14,7 @@ module LexicalUnits
     def self.sentence_separators
       [
         '\.', '\?', '\!',
-        '‽'
+        "‽"
       ].join
     end
 end

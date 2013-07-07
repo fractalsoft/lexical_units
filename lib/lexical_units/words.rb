@@ -1,3 +1,4 @@
+# coding: utf-8
 module LexicalUnits
   # Split text into words
   #
