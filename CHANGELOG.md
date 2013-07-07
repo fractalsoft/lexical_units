@@ -5,3 +5,7 @@
 ## v0.0.2
 
 * added split into sentences
+
+## v0.0.3
+
+* fixed problem with coding
