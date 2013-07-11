@@ -9,3 +9,7 @@
 ## v0.0.3
 
 * fixed problem with coding
+
+## v0.0.4
+
+* added split into words with Spanish marks

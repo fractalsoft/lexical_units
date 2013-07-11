@@ -1,4 +1,5 @@
 # LexicalUnits [![Gem Version](https://badge.fury.io/rb/lexical_units.png)](http://badge.fury.io/rb/lexical_units) [![Build Status](https://travis-ci.org/fractalsoft/lexical_units.png)](https://travis-ci.org/fractalsoft/lexical_units) [![Dependency Status](https://gemnasium.com/fractalsoft/lexical_units.png)](https://gemnasium.com/fractalsoft/lexical_units) [![Coverage Status](https://coveralls.io/repos/fractalsoft/lexical_units/badge.png)](https://coveralls.io/r/fractalsoft/lexical_units)
+[![endorse](https://api.coderwall.com/torrocus/endorsecount.png)](https://coderwall.com/torrocus)
 
 Lexical unit is a single word, a part of a word, or a chain of words that forms the basic elements of a language's lexicon.
 
