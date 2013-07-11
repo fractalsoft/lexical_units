@@ -13,3 +13,7 @@
 ## v0.0.4
 
 * added split into words with Spanish marks
+
+## v0.0.5
+
+* removed JRuby support
