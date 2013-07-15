@@ -17,3 +17,7 @@
 ## v0.0.5
 
 * removed JRuby support
+
+## v0.0.6
+
+* support words with hyphen
