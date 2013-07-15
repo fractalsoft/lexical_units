@@ -32,10 +32,11 @@ describe LexicalUnits do
       subject.words(text).should eq(array)
     end
 
-    it "splits text with hyphen into words" do
+    it "no splits text with hyphen into words" do
       text = "Lorem ipsum dolor-sit amet"
+      array = %w(Lorem ipsum dolor-sit amet)
 
-      subject.words(text).should eq(@array)
+      subject.words(text).should eq(array)
     end
 
     it "splits text with slash into words" do
