@@ -21,3 +21,7 @@
 ## v0.0.6
 
 * support words with hyphen
+
+## v0.0.7
+
+* added split into words without digits

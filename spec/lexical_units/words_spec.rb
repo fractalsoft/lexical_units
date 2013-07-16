@@ -88,5 +88,16 @@ describe LexicalUnits do
       subject.words(text).should eq(@array)
     end
 
+    it "splits text with equals sign into words" do
+      text = "Lorem ipsum=dolor sit amet"
+
+      subject.words(text).should eq(@array)
+    end
+
+    it "splits text with typewriter double quotes into words" do
+      text = %Q(Lorem"ipsum dolor"sit amet)
+
+      subject.words(text).should eq(@array)
+    end
   end
 end
