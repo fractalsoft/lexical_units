@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Aleksander Malaszkiewicz"]
   spec.email         = ["info@fractalsoft.org"]
   spec.summary       = %q{Split text into lexical units}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/fractalsoft/lexical_units"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
