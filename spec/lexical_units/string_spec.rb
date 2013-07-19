@@ -23,4 +23,13 @@ describe LexicalUnits::String do
       string.sentences.should eq(array)
     end
   end
+
+  context "#words_without_digits" do
+    it "splits String into words (no ditigs)" do
+      array = %w(Lorem ipsum dolor sit amet)
+      string = "Lorem 1 ipsum 23 dolor 456 sit 7890 amet"
+
+      string.words_without_digits.should eq(array)
+    end
+  end
 end

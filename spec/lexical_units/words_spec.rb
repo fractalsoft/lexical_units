@@ -99,5 +99,29 @@ describe LexicalUnits do
 
       subject.words(text).should eq(@array)
     end
+
+    it "split text with non-English quotation marks into words" do
+      text = %Q(Lorem»ipsum dolor«sit amet)
+
+      subject.words(text).should eq(@array)
+    end
+
+    it "split text with 'at sign' (@) into words" do
+      text = %Q(Lorem@ipsum dolor sit amet)
+
+      subject.words(text).should eq(@array)
+    end
+
+    it "split text with 'number sign (#) into words" do
+      text = %Q(Lorem ipsum#dolor sit amet)
+
+      subject.words(text).should eq(@array)
+    end
+
+    it "split text with plus (+) into words" do
+      text = %Q(Lorem+ipsum dolor+sit amet)
+
+      subject.words(text).should eq(@array)
+    end
   end
 end
