@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/fractalsoft/lexical_units.png)](http://waffle.io/fractalsoft/lexical_units)  
 # LexicalUnits [![Gem Version](https://badge.fury.io/rb/lexical_units.png)](http://badge.fury.io/rb/lexical_units) [![Build Status](https://travis-ci.org/fractalsoft/lexical_units.png)](https://travis-ci.org/fractalsoft/lexical_units) [![Dependency Status](https://gemnasium.com/fractalsoft/lexical_units.png)](https://gemnasium.com/fractalsoft/lexical_units) [![Coverage Status](https://coveralls.io/repos/fractalsoft/lexical_units/badge.png)](https://coveralls.io/r/fractalsoft/lexical_units)
 [![endorse](https://api.coderwall.com/torrocus/endorsecount.png)](https://coderwall.com/torrocus)
 
