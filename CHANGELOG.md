@@ -25,3 +25,7 @@
 ## v0.0.7
 
 * added split into words without digits
+
+## v0.0.8
+
+* code clean up

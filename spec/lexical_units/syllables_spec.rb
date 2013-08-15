@@ -2,7 +2,6 @@
 require 'spec_helper'
 
 describe LexicalUnits do
-  context ".syllables" do
-    let(:klass) { LexicalUnits }
+  context '.syllables' do
   end
 end
