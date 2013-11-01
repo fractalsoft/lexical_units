@@ -10,6 +10,10 @@ module LexicalUnits
       LexicalUnits.sentences(self)
     end
 
+    def words_and_sentences
+      LexicalUnits.words_and_sentences(self)
+    end
+
     def words_without_digits
       LexicalUnits.words_without_digits(self)
     end

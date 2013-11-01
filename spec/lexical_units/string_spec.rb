@@ -25,6 +25,17 @@ describe LexicalUnits::String do
     end
   end
 
+  context '#words_and_sentences' do
+    it 'splits String into words and sentences' do
+      array = [%w(Lorem ipsum), %w(Dolor sit), %w(Amet)]
+      string = array.map do |sentence|
+        sentence.join(' ')
+      end.join('. ') + '.'
+
+      string.words_and_sentences.should eq(array)
+    end
+  end
+
   context '#words_without_digits' do
     it 'splits String into words (no ditigs)' do
       array = %w(Lorem ipsum dolor sit amet)

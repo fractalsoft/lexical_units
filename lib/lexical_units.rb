@@ -1,6 +1,7 @@
 require 'lexical_units/words'
 require 'lexical_units/sentences'
 require 'lexical_units/syllables'
+require 'lexical_units/words_and_sentences'
 require 'lexical_units/words_without_digits'
 require 'lexical_units/string'
 require 'lexical_units/version'

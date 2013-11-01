@@ -23,6 +23,7 @@ Or install it yourself as:
 ```ruby
 LexicalUnits::words(text)
 LexicalUnits::sentences(text)
+LexicalUnits::words_and_sentences(text)
 LexicalUnits::words_without_digits(text)
 ```
 
