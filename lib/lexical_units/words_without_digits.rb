@@ -4,8 +4,8 @@
 module LexicalUnits
   # Split text into words without digits
   #
-  #   self.words("Lorem 0 ipsum") #=> ["Lorem", "ipsum"]
-  #   self.words("Lorem ipsum 100") #=> ["Lorem", "ipsum"]
+  #   self.words('Lorem 0 ipsum') #=> ['Lorem', 'ipsum']
+  #   self.words('Lorem ipsum 100') #=> ['Lorem', 'ipsum']
   def self.words_without_digits(text)
     LexicalUnits.words(text).delete_if { |word| numeric?(word) }
   end

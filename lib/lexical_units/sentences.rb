@@ -4,8 +4,8 @@
 module LexicalUnits
   # Split text into sentences
   #
-  #   self.words("Lorem, ipsum. Dolor?") #=> ["Lorem, ipsum.", "Dolor?"]
-  #   self.words("Lorem! Ipsum dolor?") #=> ["Lorem!", "Ipsum dolor?"]
+  #   self.words('Lorem, ipsum. Dolor?') #=> ['Lorem, ipsum.', 'Dolor?']
+  #   self.words('Lorem! Ipsum dolor?') #=> ['Lorem!', 'Ipsum dolor?']
   def self.sentences(text)
     separators = LexicalUnits.sentence_separators
     regexp = Regexp.new("[^#{separators}]+[#{separators}]{1,3}")

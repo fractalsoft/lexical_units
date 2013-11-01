@@ -29,3 +29,7 @@
 ## v0.0.8
 
 * code clean up
+
+## v0.0.9
+
+* added split into sentences and each into words
