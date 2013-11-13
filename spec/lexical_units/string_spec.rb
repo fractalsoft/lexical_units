@@ -12,7 +12,7 @@ describe LexicalUnits::String do
       array = %w(Lorem ipsum dolor sit amet)
       string = array.join(' ')
 
-      string.words.should eq(array)
+      expect(string.words).to eq(array)
     end
   end
 
@@ -21,7 +21,7 @@ describe LexicalUnits::String do
       array = ['Lorem ipsum!', 'Dolor sit?', 'Amet.']
       string = array.join
 
-      string.sentences.should eq(array)
+      expect(string.sentences).to eq(array)
     end
   end
 
@@ -32,7 +32,7 @@ describe LexicalUnits::String do
         sentence.join(' ')
       end.join('. ') + '.'
 
-      string.words_and_sentences.should eq(array)
+      expect(string.words_and_sentences).to eq(array)
     end
   end
 
@@ -41,7 +41,7 @@ describe LexicalUnits::String do
       array = %w(Lorem ipsum dolor sit amet)
       string = 'Lorem 1 ipsum 23 dolor 456 sit 7890 amet'
 
-      string.words_without_digits.should eq(array)
+      expect(string.words_without_digits).to eq(array)
     end
   end
 end

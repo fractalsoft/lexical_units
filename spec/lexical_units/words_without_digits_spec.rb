@@ -9,7 +9,7 @@ describe LexicalUnits do
     ].each do |hash|
       text, array = hash.values
       it 'splits text into words without digits' do
-        subject.words_without_digits(text).should eq(array)
+        expect(subject.words_without_digits(text)).to eq(array)
       end
     end
   end

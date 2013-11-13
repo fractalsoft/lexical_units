@@ -11,7 +11,7 @@ describe LexicalUnits do
         %w(Consectetur adipiscing elit)
       ]
 
-      subject.words_and_sentences(text).should eq(array)
+      expect(subject.words_and_sentences(text)).to eq(array)
     end
   end
 end

@@ -14,7 +14,7 @@ describe LexicalUnits do
         'Duis faucibus tortor in.'
       ]
 
-      subject.sentences(text).should eq(array)
+      expect(subject.sentences(text)).to eq(array)
     end
 
     it 'splits text with question mark and exclamation mark into sentences' do
@@ -25,7 +25,7 @@ describe LexicalUnits do
         'Consectetur adipiscing elit.'
       ]
 
-      subject.sentences(text).should eq(array)
+      expect(subject.sentences(text)).to eq(array)
     end
 
     it 'splits text with ellipsis into sentences' do
@@ -35,7 +35,7 @@ describe LexicalUnits do
         'Consectetur adipiscing elit.'
       ]
 
-      subject.sentences(text).should eq(array)
+      expect(subject.sentences(text)).to eq(array)
     end
 
     it 'splits text with interrobangs into sentences' do
@@ -47,7 +47,7 @@ describe LexicalUnits do
         'Really?'
       ]
 
-      subject.sentences(text).should eq(array)
+      expect(subject.sentences(text)).to eq(array)
     end
 
   end
