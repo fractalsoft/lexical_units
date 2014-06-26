@@ -1,4 +1,4 @@
 # Gem version
 module LexicalUnits
-  VERSION = '0.0.9'
+  VERSION = '0.1.0'
 end
