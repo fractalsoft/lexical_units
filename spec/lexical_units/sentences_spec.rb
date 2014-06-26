@@ -4,8 +4,8 @@ require 'spec_helper'
 describe LexicalUnits do
   context '.sentences' do
     it 'splits text into sentences' do
-      text = %q{Lorem ipsum dolor sit amet. Consectetur adipiscing elit.
-        Fusce ut lacinia lorem. Nullam a sem quam. Duis faucibus tortor in.}
+      text = %q(Lorem ipsum dolor sit amet. Consectetur adipiscing elit.
+        Fusce ut lacinia lorem. Nullam a sem quam. Duis faucibus tortor in.)
       array = [
         'Lorem ipsum dolor sit amet.',
         'Consectetur adipiscing elit.',
@@ -50,5 +50,11 @@ describe LexicalUnits do
       expect(subject.sentences(text)).to eq(array)
     end
 
+    it 'splits text into sentence without end-dot' do
+      text = 'Lorem ipsum dolor'
+      array = [text]
+
+      expect(subject.sentences(text)).to eq(array)
+    end
   end
 end

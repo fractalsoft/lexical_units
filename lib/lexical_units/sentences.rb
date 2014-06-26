@@ -8,16 +8,16 @@ module LexicalUnits
   #   self.words('Lorem! Ipsum dolor?') #=> ['Lorem!', 'Ipsum dolor?']
   def self.sentences(text)
     separators = LexicalUnits.sentence_separators
-    regexp = Regexp.new("[^#{separators}]+[#{separators}]{1,3}")
+    regexp = Regexp.new("[^#{separators}]+[#{separators}]{0,3}")
     text.scan(regexp).map(&:strip)
   end
 
   private
 
-    def self.sentence_separators
-      [
-        '\.', '\?', '\!',
-        '‽'
-      ].join
-    end
+  def self.sentence_separators
+    [
+      '\.', '\?', '\!',
+      '‽'
+    ].join
+  end
 end

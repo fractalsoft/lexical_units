@@ -12,10 +12,10 @@ module LexicalUnits
 
   private
 
-    def self.numeric?(value)
-      return true if value =~ /^\d+$/
-      true if Float(value)
-    rescue
-      false
-    end
+  def self.numeric?(value)
+    return true if value =~ /^\d+$/
+    true if Float(value)
+  rescue
+    false
+  end
 end
