@@ -123,5 +123,11 @@ describe LexicalUnits do
 
       expect(subject.words(text)).to eq(@array)
     end
+
+    it 'splite text with minus (–) into words' do
+      text = %Q(Lorem ipsum–dolor sit amet)
+
+      expect(subject.words(text)).to eq(@array)
+    end
   end
 end
