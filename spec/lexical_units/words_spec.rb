@@ -95,43 +95,49 @@ describe LexicalUnits do
     end
 
     it 'splits text with typewriter double quotes into words' do
-      text = %Q(Lorem"ipsum dolor"sit amet)
+      text = 'Lorem"ipsum dolor"sit amet'
 
       expect(subject.words(text)).to eq(@array)
     end
 
     it 'split text with non-English quotation marks into words' do
-      text = %Q(Lorem»ipsum dolor«sit amet)
+      text = 'Lorem„ipsum”dolor„sit”amet'
+
+      expect(subject.words(text)).to eq(@array)
+    end
+
+    it 'split text with down-up double quotation marks into words' do
+      text = 'Lorem»ipsum dolor«sit amet'
 
       expect(subject.words(text)).to eq(@array)
     end
 
     it "split text with 'at sign' (@) into words" do
-      text = %Q(Lorem@ipsum dolor sit amet)
+      text = 'Lorem@ipsum dolor sit amet'
 
       expect(subject.words(text)).to eq(@array)
     end
 
     it "split text with 'number sign (#) into words" do
-      text = %Q(Lorem ipsum#dolor sit amet)
+      text = 'Lorem ipsum#dolor sit amet'
 
       expect(subject.words(text)).to eq(@array)
     end
 
     it 'split text with plus (+) into words' do
-      text = %Q(Lorem+ipsum dolor+sit amet)
+      text = 'Lorem+ipsum dolor+sit amet'
 
       expect(subject.words(text)).to eq(@array)
     end
 
     it 'splite text with minus (–) into words' do
-      text = %Q(Lorem ipsum–dolor sit amet)
+      text = 'Lorem ipsum–dolor sit amet'
 
       expect(subject.words(text)).to eq(@array)
     end
 
     it 'splite text with long minus (—) into words' do
-      text = %Q(Lorem—ipsum—dolor sit—amet)
+      text = 'Lorem—ipsum—dolor sit—amet'
 
       expect(subject.words(text)).to eq(@array)
     end
