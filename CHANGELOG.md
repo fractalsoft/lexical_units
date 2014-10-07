@@ -38,6 +38,6 @@
 
 * added split into sentences without end-dot
 
-## v0.1.1
+## v0.1.4
 
-* added split into words with long dash marks
+* added split into words with long dash marks & fixed bugs
