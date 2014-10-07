@@ -123,5 +123,11 @@ describe LexicalUnits do
 
       expect(subject.words(text)).to eq(@array)
     end
+
+    it 'split text with long dash (–) into words' do
+      text = %Q(Lorem–ipsum–dolor sit–amet)
+
+      expect(subject.words(text)).to eq(@array)
+    end
   end
 end
