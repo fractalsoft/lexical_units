@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'lexical_units'
   spec.version       = LexicalUnits::VERSION
   spec.authors       = ['Aleksander Malaszkiewicz']
-  spec.email         = ['info@fractalsoft.org']
+  spec.email         = %w(info@fractalsoft.org)
   spec.summary       = %q(Split text into lexical units)
   spec.homepage      = 'https://github.com/fractalsoft/lexical_units'
   spec.license       = 'MIT'
@@ -18,5 +18,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.5'
-  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rake', '>=0'
+  spec.add_development_dependency 'rspec', '~> 3.0.0'
 end
